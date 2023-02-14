@@ -5,8 +5,8 @@ import NewOrderPage from "./NewOrderPage/NewOrderPage"
 import OrderHistoryPage from "./OrderHistoryPage/OrderHistoryPage";
 import NavBar from "../../components/NavBar"
 import "./App.css";
-
 import {getUser} from "../../utilities/users-services"
+import NotesPage from "./NotesPage/NotesPage"
 
 function App() {
 //user is the variable and setUser is the setter function
@@ -27,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/orders/new" element={<NewOrderPage/>}/>
           <Route path="/orders" element={<OrderHistoryPage/>}/>
+          <Route path="/notes" element={<NotesPage/>}/>
         </Routes>
         </>
         ) : (
